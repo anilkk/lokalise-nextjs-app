@@ -1,3 +1,4 @@
+// import '../css/styles.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import LocaleSwitcher from '../components/locale-switcher'
