@@ -1,5 +1,9 @@
 import { i18n } from '../../i18n-config'
+import '../css/styles.css'
+import { Inter } from 'next/font/google'
 
+
+// import Header from '@/components/ui/header'
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
 }
