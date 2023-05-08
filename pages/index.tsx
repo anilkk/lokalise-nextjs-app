@@ -21,25 +21,27 @@ export default function IndexPage() {
               <div className="max-w-3xl mx-auto">
                 <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
               </div>
+              <div>
+                <h1>Index page</h1>
+                <p>Current locale: {locale}</p>
+                <p>Default locale: {defaultLocale}</p>
+                <p>Configured locales: {JSON.stringify(locales)}</p>
+
+                <LocaleSwitcher />
+
+                <Link href="/gsp">To getStaticProps page</Link>
+                <br />
+
+                <Link href="/gsp/first">To dynamic getStaticProps page</Link>
+                <br />
+
+                <Link href="/gssp">To getServerSideProps page</Link>
+                <br />
+              </div>
             </div>
           </div>
 
         </div>
-        <h1>Index page</h1>
-        <p>Current locale: {locale}</p>
-        <p>Default locale: {defaultLocale}</p>
-        <p>Configured locales: {JSON.stringify(locales)}</p>
-
-        <LocaleSwitcher />
-
-        <Link href="/gsp">To getStaticProps page</Link>
-        <br />
-
-        <Link href="/gsp/first">To dynamic getStaticProps page</Link>
-        <br />
-
-        <Link href="/gssp">To getServerSideProps page</Link>
-        <br />
       </section>
     </div>
   )
