@@ -1,3 +1,10 @@
+'use client'
+
+import { useEffect } from 'react'
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import { i18n } from '../../i18n-config'
 import '../css/styles.css'
 import { Inter } from 'next/font/google'
@@ -15,9 +22,24 @@ export default function Root({
   children: React.ReactNode
   params: { lang: string }
 }) {
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: 'phone',
+      duration: 700,
+      easing: 'ease-out-cubic',
+    })
+  })
+
+
   return (
     <html lang={params.lang}>
-      <body>{children}</body>
+      <body>
+        <main className="grow">
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
