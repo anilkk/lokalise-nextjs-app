@@ -1,7 +1,15 @@
 'use client'
+import { useTranslation } from '../../i18n'
+import { Trans } from 'react-i18next'
 
-export default function Hero() {
 
+interface MyLang {
+  lang: string;
+}
+
+export default async function Hero(props: MyLang) {
+  // @ts-ignore
+  const { t } = await useTranslation(props.lang)
   return (
     <section className="relative">
 
@@ -29,9 +37,32 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Make your website <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">wonderful</span></h1>
+            <h3>
+               {/*
+              // @ts-ignore */}
+            {/* <Trans t={t}>Hello World</Trans> */}
+            <Trans
+                i18nKey="title" // optional -> fallbacks to defaults if not provided
+                defaults="hello world" // optional defaultValue
+              />
+            </h3>
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">
+               {/*
+                // @ts-ignore */}
+              {/* <Trans
+                  i18nKey="hero_header_title" // optional -> fallbacks to defaults if not provided
+                  defaults="Make your website <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400'>{{wonderful}}</span>" // optional defaultValue
+                  values={{ wonderful: 'beautiful'}}
+                  // components={{ italic: <i />, bold: <strong /> }}
+                /> */}
+                <Trans i18nKey="hero_header_title" >
+                  Make your website <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400'>wonderful</span>
+                </Trans>
+            </h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+               {/*
+              // @ts-ignore */}
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150"> {t('hero_header_title_description')}</p>
             </div>
           </div>
         </div>

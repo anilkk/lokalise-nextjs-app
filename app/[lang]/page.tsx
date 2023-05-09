@@ -20,7 +20,9 @@ export default async function IndexPage({
       // @ts-ignore */}
         {t('title')}
         </h1>
-      <Hero />
+         {/*
+      // @ts-ignore */}
+      <Hero lang={lang} />
       <LocaleSwitcher />
       <p>Current locale: {lang}</p>
       <p>
