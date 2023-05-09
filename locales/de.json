@@ -1,4 +1,6 @@
 {
+  "title": "Hallo Leute!",
+  "back-to-home": "Zurück zur Hauptseite",
   "server-component": {
     "welcome": "Willkommen"
   },

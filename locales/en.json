@@ -1,4 +1,6 @@
 {
+  "title": "Hi there!",
+  "back-to-home": "Back to home",
   "server-component": {
     "welcome": "Welcome"
   },
