@@ -27,7 +27,7 @@ export default async function IndexPage({
         </h1>
          {/*
       // @ts-ignore */}
-      <Hero lang={lang} />
+      <Hero   />
       <p>Current locale: {lang}</p>
       <p>
         This text is rendered on the server:{' '}

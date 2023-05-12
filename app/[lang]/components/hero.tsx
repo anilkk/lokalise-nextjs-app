@@ -1,19 +1,10 @@
 'use client'
-import { useTranslation } from '../../i18n'
 import { Trans } from 'react-i18next'
 
-
-interface MyLang {
-  lang: string;
-}
-
-export default async function Hero(props: MyLang) {
-  // @ts-ignore
-  const { t } = await useTranslation(props.lang)
+// @ts-ignore
+export default async function Hero() {  
   return (
     <section className="relative">
-
-      {/* Illustration behind hero content */}
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
         <svg width="1360" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -60,13 +51,11 @@ export default async function Hero(props: MyLang) {
                 </Trans>
             </h1>
             <div className="max-w-3xl mx-auto">
-               {/*
-              // @ts-ignore */}
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150"> {t('hero_header_title_description')}</p>
+                <Trans i18nKey="hero_header_title_description" >
+                </Trans>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   )
