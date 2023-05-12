@@ -6,6 +6,7 @@ import Hero from './components/hero'
 import Features from './components/features'
 import FeaturesBlocks from './components/features-blocks'
 import Testimonials from './components/testimonials'
+import Newsletter from './components/newsletter'
 import Footer from './components/footer'
 import { useTranslation } from '../i18n'
 
@@ -37,6 +38,7 @@ export default async function IndexPage({
       <FeaturesBlocks />
       <LocaleSwitcher />
       <Testimonials />
+      <Newsletter />
       <Footer />
     </div>
   )
