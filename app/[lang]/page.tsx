@@ -3,6 +3,7 @@ import { Locale } from '../../i18n-config'
 import Counter from './components/counter'
 import LocaleSwitcher from './components/locale-switcher'
 import Hero from './components/hero'
+import Footer from './components/footer'
 import { useTranslation } from '../i18n'
 
 export default async function IndexPage({
@@ -30,6 +31,7 @@ export default async function IndexPage({
         {dictionary['server-component'].welcome}
       </p>
       <Counter dictionary={dictionary.counter} />
+      <Footer />
     </div>
   )
 }
