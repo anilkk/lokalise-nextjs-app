@@ -5,6 +5,7 @@ import LocaleSwitcher from './components/locale-switcher'
 import Hero from './components/hero'
 import Features from './components/features'
 import FeaturesBlocks from './components/features-blocks'
+import Testimonials from './components/testimonials'
 import Footer from './components/footer'
 import { useTranslation } from '../i18n'
 
@@ -26,15 +27,16 @@ export default async function IndexPage({
          {/*
       // @ts-ignore */}
       <Hero lang={lang} />
-      <Features />
-      <FeaturesBlocks />
-      <LocaleSwitcher />
       <p>Current locale: {lang}</p>
       <p>
         This text is rendered on the server:{' '}
         {dictionary['server-component'].welcome}
       </p>
       <Counter dictionary={dictionary.counter} />
+      <Features />
+      <FeaturesBlocks />
+      <LocaleSwitcher />
+      <Testimonials />
       <Footer />
     </div>
   )
