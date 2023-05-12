@@ -1,8 +1,11 @@
 'use client'
 import { Trans } from 'react-i18next'
+import { useTranslation } from '../../i18n/client'
 
 // @ts-ignore
-export default async function Hero() {  
+export default async function Hero({lang}) {  
+  const {t} = useTranslation(lang);
+
   return (
     <section className="relative">
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
@@ -29,13 +32,9 @@ export default async function Hero() {
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
             <h3>
-               {/*
-              // @ts-ignore */}
-            {/* <Trans t={t}>Hello World</Trans> */}
-            <Trans
-                i18nKey="title" // optional -> fallbacks to defaults if not provided
-                defaults="hello world" // optional defaultValue
-              />
+              {/*
+                // @ts-ignore */}
+              {t('title')}
             </h3>
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">
                {/*

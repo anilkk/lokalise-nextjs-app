@@ -21,13 +21,13 @@ export default async function IndexPage({
   return (
     <div>
        <h1>
-       {/*
+           {/*
       // @ts-ignore */}
         {t('title')}
         </h1>
          {/*
       // @ts-ignore */}
-      <Hero   />
+      <Hero  lang={lang} />
       <p>Current locale: {lang}</p>
       <p>
         This text is rendered on the server:{' '}
