@@ -3,6 +3,8 @@ import { Locale } from '../../i18n-config'
 import Counter from './components/counter'
 import LocaleSwitcher from './components/locale-switcher'
 import Hero from './components/hero'
+import Features from './components/features'
+import FeaturesBlocks from './components/features-blocks'
 import Footer from './components/footer'
 import { useTranslation } from '../i18n'
 
@@ -24,6 +26,8 @@ export default async function IndexPage({
          {/*
       // @ts-ignore */}
       <Hero lang={lang} />
+      <Features />
+      <FeaturesBlocks />
       <LocaleSwitcher />
       <p>Current locale: {lang}</p>
       <p>
