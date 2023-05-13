@@ -31,27 +31,15 @@ export default async function Hero({lang}) {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h3>
-              {/*
-                // @ts-ignore */}
-              {t('title')}
-            </h3>
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">
-               {/*
-                // @ts-ignore */}
-              {/* <Trans
-                  i18nKey="hero_header_title" // optional -> fallbacks to defaults if not provided
-                  defaults="Make your website <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400'>{{wonderful}}</span>" // optional defaultValue
-                  values={{ wonderful: 'beautiful'}}
-                  // components={{ italic: <i />, bold: <strong /> }}
-                /> */}
                 <Trans i18nKey="hero_header_title" >
                   Make your website <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400'>wonderful</span>
                 </Trans>
             </h1>
             <div className="max-w-3xl mx-auto">
-                <Trans i18nKey="hero_header_title_description" >
-                </Trans>
+              {/*
+              // @ts-ignore */}
+              {t("hero_header_title_description")}
             </div>
           </div>
         </div>
