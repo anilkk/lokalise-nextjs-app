@@ -1,7 +1,15 @@
+'use client'
 import Image from 'next/image'
 import TestimonialImage from '../../../public/images/testimonial.jpg'
 
-export default function Testimonials() {
+import { Trans } from 'react-i18next'
+import { useTranslation } from '../../i18n/client'
+
+// @ts-ignore
+export default async function Testimonials({lang}) {
+  
+  const {t} = useTranslation(lang);
+
   return (
     <section className="relative">
 
@@ -27,9 +35,16 @@ export default function Testimonials() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">Trusted by over 20,000 companies all over the world</h2>
-            <p className="text-xl text-gray-600" data-aos="zoom-y-out">Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar mattis
-              blandit libero cursus mattis.</p>
+            <h2 className="h2 mb-4">
+                           {/*
+              // @ts-ignore */}
+              {t('testimonials_header_header')}
+            </h2>
+            <p className="text-xl text-gray-600" data-aos="zoom-y-out">
+              {/*
+              // @ts-ignore */}
+              {t('testimoniales_header_body')}
+            </p>
           </div>
 
           {/* Items */}
@@ -85,11 +100,21 @@ export default function Testimonials() {
                   <Image className="relative rounded-full" src={TestimonialImage} width={96} height={96} alt="Testimonial 01" />
                 </div>
                 <blockquote className="text-xl font-medium mb-4">
-                  “ I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time. “
+                  {/*
+                  // @ts-ignore */}
+                  {t('testimonials_testimonial')}
                 </blockquote>
-                <cite className="block font-bold text-lg not-italic mb-1">Darya Finger</cite>
+                <cite className="block font-bold text-lg not-italic mb-1">
+                  {/*
+                  // @ts-ignore */}
+                  {t('testimonials_testimonial_person')}
+                </cite>
                 <div className="text-gray-600">
-                  <span>CEO & Co-Founder</span> <a className="text-blue-600 hover:underline" href="#0">@Dropbox</a>
+                    {/*
+                    // @ts-ignore */}
+                    <Trans i18nKey="testimonials_testimonial_job" >
+                      CEO & Co-Founder <a className="text-blue-600 hover:underline" href="#0">@Dropbox</a>
+                    </Trans>
                 </div>
               </div>
 

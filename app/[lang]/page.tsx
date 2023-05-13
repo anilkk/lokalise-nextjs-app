@@ -20,12 +20,7 @@ export default async function IndexPage({
 
   return (
     <div>
-       <h1>
-           {/*
-      // @ts-ignore */}
-        {t('title')}
-        </h1>
-         {/*
+      {/*
       // @ts-ignore */}
       <Hero  lang={lang} />
       <p>Current locale: {lang}</p>
@@ -39,7 +34,9 @@ export default async function IndexPage({
       <Features lang={lang}/>
       <FeaturesBlocks />
       <LocaleSwitcher />
-      <Testimonials />
+      {/*
+      // @ts-ignore */}
+      <Testimonials lang={lang}/>
       <Newsletter />
       <Footer />
     </div>
