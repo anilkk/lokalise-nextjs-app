@@ -34,7 +34,9 @@ export default async function IndexPage({
         {dictionary['server-component'].welcome}
       </p>
       <Counter dictionary={dictionary.counter} />
-      <Features />
+      {/*
+      // @ts-ignore */}
+      <Features lang={lang}/>
       <FeaturesBlocks />
       <LocaleSwitcher />
       <Testimonials />

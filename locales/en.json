@@ -8,5 +8,15 @@
   "counter": {
     "increment": "Increment",
     "decrement": "Decrement"
-  }
+  },
+  "features_section_header": "Explore the solutions",
+  "features_section_header_body": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.",
+  "features_content_header": "Powerful suite of tools",
+  "features_content_body": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+  "features_content_tabs_ecosystem_header": "ENGLISH TEST Building the Simple ecosystem",
+  "features_content_tabs_ecosystem_body": "Take collaboration to the next level with security and administrative features built for teams.",
+  "features_content_tabs_2_header": "Building the Simple ecosystem",
+  "features_content_tabs_2_body": "Take collaboration to the next level with security and administrative features built for teams.",
+  "features_content_tabs_3_header": "Building the Simple ecosystem",
+  "features_content_tabs_3_body": "Take collaboration to the next level with security and administrative features built for teams."
 }
