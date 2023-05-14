@@ -1,6 +1,6 @@
 {
   "back-to-home": "Back to home",
-  "hero_header_title": "ENGLISH Make your website <1>wonderful</1>",
+  "hero_header_title": "ENGLISH Make your website <1>incredible</1>",
   "hero_header_title_description": "MY ENGLISH KEY Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.",
   "server-component": {
     "welcome": "Welcome"
@@ -30,5 +30,28 @@
   "newsletter_CTA_form_email_placeholder": "Your email…",
   "newsletter_CTA_success_message_unsubscribe": "No spam. You can unsubscribe at any time.",
   "newsletter_CTA_placeholder_email": "ENG Your email…",
-  "newsletter_CTA_label_email": "ENG Your email…"
+  "newsletter_CTA_label_email": "ENG Your email…",
+  "footer_block1_terms_privacy_policy": "<0>Terms</0> · <1>Privacy Policy</1>",
+  "footer_block2_header": "Products",
+  "footer_block2_list1": "Web Studio",
+  "footer_block2_list2": "DynamicBox Flex",
+  "footer_block2_list3": "Programming Forms",
+  "footer_block2_list4": "Integrations",
+  "footer_block2_list5": "Command-line",
+  "footer_block3_header": "Resources",
+  "footer_block3_list1": "Documentation",
+  "footer_block3_list2": "Tutorials & Guides",
+  "footer_block3_list3": "Blog",
+  "footer_block3_list4": "Support Center",
+  "footer_block3_list5": "Partners",
+  "footer_block4_header": "Company",
+  "footer_block4_list1": "Home",
+  "footer_block4_list2": "About us",
+  "footer_block4_list3": "Company values",
+  "footer_block4_list4": "Pricing",
+  "footer_block4_list5": "Privacy Policy",
+  "footer_block5_header": "Subscribe",
+  "footer_block5_body": "Get the latest news and articles to your inbox every month.",
+  "footer_block5_input_email_placeholder": "Your email",
+  "footer_copyright_note": "© Cruip.com. All rights reserved."
 }

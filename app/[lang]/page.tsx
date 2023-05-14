@@ -40,7 +40,9 @@ export default async function IndexPage({
       {/*
       // @ts-ignore */}
       <Newsletter lang={lang}/>
-      <Footer />
+      {/*
+      // @ts-ignore */}
+      <Footer lang={lang}/>
     </div>
   )
 }
