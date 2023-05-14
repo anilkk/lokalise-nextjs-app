@@ -21,9 +21,9 @@ export default async function Footer({lang}) {
               <Logo />
             </div>
             <div className="text-sm text-gray-600">
-              <Trans i18nKey="footer_block1_terms_privacy_policy">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</a> · <a href="#0" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</a>
-              </Trans>
+              <Trans i18nKey="footer_block1_terms_privacy_policy"
+                defaults="<a href='#0' className='text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out'>Terms</a> · <a href='#0' className='text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out'>Privacy Policy</a>"
+              />
             </div>
           </div>
 
