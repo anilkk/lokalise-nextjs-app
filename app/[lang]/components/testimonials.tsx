@@ -112,9 +112,9 @@ export default async function Testimonials({lang}) {
                 <div className="text-gray-600">
                     {/*
                     // @ts-ignore */}
-                    <Trans i18nKey="testimonials_testimonial_job" >
-                      CEO & Co-Founder <a className="text-blue-600 hover:underline" href="#0">@Dropbox</a>
-                    </Trans>
+                    <Trans i18nKey="testimonials_testimonial_job"
+                      defaults="CEO & Co-Founder <a className='text-blue-600 hover:underline' href='#0'>@Dropbox</a>"
+                    />
                 </div>
               </div>
 
