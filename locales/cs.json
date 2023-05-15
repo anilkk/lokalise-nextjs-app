@@ -1,8 +1,8 @@
 {
   "back-to-home": "Zpět na úvod",
   "counter": {
-      "decrement": "Snížení",
-      "increment": "Přírůstek"
+    "decrement": "Snížení",
+    "increment": "Přírůstek"
   },
   "features_content_body": "Naše výkonná sada nástrojů je velmi výkonná",
   "features_content_header": "Výkonná sada nástrojů",
@@ -14,7 +14,7 @@
   "features_content_tabs_ecosystem_header": "Budování jednoduchého ekosystému",
   "features_section_header": "Prozkoumejte řešení",
   "features_section_header_body": "Naše řešení řeší problémy, které zoufale potřebují řešení.",
-  "footer_block1_terms_privacy_policy": "<0>Podmínky<\/0> - <1>Zásady ochrany osobních údajů<\/1>",
+  "footer_block1_terms_privacy_policy": "<0>Podmínky</0> - <1>Zásady ochrany osobních údajů</1>",
   "footer_block2_header": "Produkty",
   "footer_block2_list1": "Webové studio",
   "footer_block2_list2": "DynamicBox Flex",
@@ -37,21 +37,20 @@
   "footer_block5_header": "Přihlaste se k odběru na",
   "footer_block5_input_email_placeholder": "Váš e-mail",
   "footer_copyright_note": "© Cruip.com. Všechna práva vyhrazena.",
-  "hero_header_title": "Vytvořte si <1>neuvěřitelné<\/1> webové stránky",
+  "hero_header_title": "Vytvořte si <1>neuvěřitelné</1> webové stránky",
   "hero_header_title_description": "Naše šablona vstupní stránky funguje na všech zařízeních, takže ji stačí nastavit jen jednou a krásné výsledky budete mít navždy.",
   "newsletter_CTA_content_body": "Odpovědi, o kterých jste nevěděli, že je potřebujete, najdete v našich referencích a průvodcích.",
   "newsletter_CTA_content_header": "Chcete další návody a průvodce?",
-  "newsletter_CTA_form_email_placeholder": "Váš e-mail...",
   "newsletter_CTA_from_subscribe": "Přihlaste se k odběru na",
   "newsletter_CTA_label_email": "Váš e-mail...",
   "newsletter_CTA_placeholder_email": "Váš e-mail...",
   "newsletter_CTA_success_message_unsubscribe": "Žádný spam. Z odběru se můžete kdykoli odhlásit.",
   "server-component": {
-      "welcome": "Vítejte na"
+    "welcome": "Vítejte na"
   },
   "testimoniales_header_body": "Důvěryhodný pro tolik společností, že tomu nebudete věřit. Jsme vážně působiví.",
   "testimonials_header_header": "Důvěra více než 20 000 společností po celém světě",
   "testimonials_testimonial": "\" Tento produkt miluji a doporučuji ho každému. Nemohl by být jednodušší na používání a naše více webových stránek jsou nádherné. Neustále dostáváme hezké komentáře. \"",
-  "testimonials_testimonial_job": "Generální ředitel a spoluzakladatel <0>@Dropbox<\/0>",
+  "testimonials_testimonial_job": "Generální ředitel a spoluzakladatel <0>@Dropbox</0>",
   "testimonials_testimonial_person": "Darya Finger"
 }

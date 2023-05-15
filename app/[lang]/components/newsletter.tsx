@@ -78,7 +78,10 @@ export default async function Newsletter({lang}) {
                     </a>
                   </div>
                   {/* Success message */}
-                  {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
+                  {/* <p className="text-sm text-gray-400 mt-3">
+                  // @ts-ignore */}
+                  {/* {t('newsletter_CTA-form_success-message')} */}
+                  {/* </p> */}
                   <p className="text-sm text-gray-400 mt-3">
                     {/*
                     // @ts-ignore */}

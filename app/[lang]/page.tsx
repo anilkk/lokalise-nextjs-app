@@ -27,7 +27,9 @@ export default async function IndexPage({
       {/*
       // @ts-ignore */}
       <Features lang={lang}/>
-      <FeaturesBlocks />
+      {/*
+      // @ts-ignore */}
+      <FeaturesBlocks lang={lang}/>
       <LocaleSwitcher />
       {/*
       // @ts-ignore */}

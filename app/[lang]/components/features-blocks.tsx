@@ -1,4 +1,10 @@
-export default function FeaturesBlocks() {
+'use client'
+
+import { Trans } from 'react-i18next'
+import { useTranslation } from '../../i18n/client'
+
+// @ts-ignore
+export default async function FeaturesBlocks({lang}) {
     return (
       <section className="relative">
   
@@ -11,8 +17,16 @@ export default function FeaturesBlocks() {
   
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-              <h2 className="h2 mb-4">Explore the solutions</h2>
-              <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+              <h2 className="h2 mb-4">
+                {/*
+                // @ts-ignore */}
+                {t('features-blocks_section-header_header')}
+              </h2>
+              <p className="text-xl text-gray-600">
+                {/*
+                // @ts-ignore */}
+                {t('features-blocks_section-header_body')}
+              </p>
             </div>
   
             {/* Items */}
@@ -31,8 +45,15 @@ export default function FeaturesBlocks() {
                     </g>
                   </g>
                 </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-                <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item1_header')}
+                </h4>
+                <p className="text-gray-600 text-center">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item1_body')}</p>
               </div>
   
               {/* 2nd item */}
@@ -47,8 +68,16 @@ export default function FeaturesBlocks() {
                     </g>
                   </g>
                 </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-                <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item2_header')}
+                </h4>
+                <p className="text-gray-600 text-center">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item2_body')}
+                </p>
               </div>
   
               {/* 3rd item */}
@@ -64,8 +93,16 @@ export default function FeaturesBlocks() {
                     </g>
                   </g>
                 </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-                <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item3_header')}
+                </h4>
+                <p className="text-gray-600 text-center">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item3_body')}
+                </p>
               </div>
   
               {/* 4th item */}
@@ -81,8 +118,16 @@ export default function FeaturesBlocks() {
                     </g>
                   </g>
                 </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-                <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item4_header')}
+                </h4>
+                <p className="text-gray-600 text-center">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item4_body')}
+                </p>
               </div>
   
               {/* 5th item */}
@@ -97,8 +142,16 @@ export default function FeaturesBlocks() {
                     </g>
                   </g>
                 </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-                <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item5_header')}
+                </h4>
+                <p className="text-gray-600 text-center">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item5_body')}
+                </p>
               </div>
   
               {/* 6th item */}
@@ -112,8 +165,16 @@ export default function FeaturesBlocks() {
                     </g>
                   </g>
                 </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-                <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item6_header')}
+                </h4>
+                <p className="text-gray-600 text-center">
+                  {/*
+                  // @ts-ignore */}
+                  {t('features-blocks_item6_body')}
+                </p>
               </div>
   
             </div>
