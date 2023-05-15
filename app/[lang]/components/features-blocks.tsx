@@ -5,6 +5,8 @@ import { useTranslation } from '../../i18n/client'
 
 // @ts-ignore
 export default async function FeaturesBlocks({lang}) {
+  const {t} = useTranslation(lang);
+
     return (
       <section className="relative">
   
