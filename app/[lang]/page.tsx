@@ -24,11 +24,6 @@ export default async function IndexPage({
       // @ts-ignore */}
       <Hero  lang={lang} />
       <p>Current locale: {lang}</p>
-      {/* <p>
-        This text is rendered on the server:{' '}
-        {dictionary['server-component'].welcome}
-      </p>
-      <Counter dictionary={dictionary.counter} /> */}
       {/*
       // @ts-ignore */}
       <Features lang={lang}/>
