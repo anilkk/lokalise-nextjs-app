@@ -8,4 +8,4 @@ const locales = {
   de: () => import('./locales/de.json').then((module) => module.default),
 }
 
-export const getDictionary = async (locale: Locale) => locales[locale]()
+export const getDictionary = async (locale: Locale) => {return locales[locale]}
