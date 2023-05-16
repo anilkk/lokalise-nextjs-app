@@ -41,6 +41,7 @@ export function middleware(request: NextRequest) {
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request)
     console.log('CURRENT LOCALE FROM REQUEST', locale);
+    console.log('CURRENT pathname FROM REQUEST', pathname);
 
     // e.g. incoming request is /products
     // The new URL is now /en-US/products
