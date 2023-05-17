@@ -1,13 +1,14 @@
 'use client'
 
 import { useEffect } from 'react'
+import LocaleSwitcher from './components/locale-switcher'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import { i18n } from '../../i18n-config'
 import '../css/styles.css'
-import { Inter } from 'next/font/google'
+
 
 
 // import Header from '@/components/ui/header'
@@ -36,6 +37,9 @@ export default function Root({
   return (
     <html lang={params.lang}>
       <body>
+        <header className='flex justify-end'>
+          <LocaleSwitcher />
+        </header>
         <main className="grow">
           {children}
         </main>
